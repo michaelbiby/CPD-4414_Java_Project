@@ -17,7 +17,7 @@ $(document).ready(function() {
             mainLetter = data.name.toUpperCase();
             returnString = mainLetter.substring(0,1);
             for(var i=0; i < mainLetter.length-1; i++){
-                returnString = returnString + "_";
+                returnString = returnString + "*";
             }
             $('#letterLabel').text(returnString);
         }
