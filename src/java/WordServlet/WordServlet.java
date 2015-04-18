@@ -48,7 +48,7 @@ public class WordServlet extends HttpServlet {
             System.out.println(hidden);
 
         } catch (IOException ex) {
-            System.out.println("Exception: " + e.getMessage());
+            System.out.println("Exception: " + ex.getMessage());
             //Logger.getLogger(WordServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
