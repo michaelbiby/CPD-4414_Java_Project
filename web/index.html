@@ -6,11 +6,51 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Hangman</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+        <script src="js/home.js"></script>
+
     </head>
     <body>
-        <div>TODO write content</div>
+
+        <div class="container">
+            <div class="text-center">
+                <h2>Hangman</h2>
+                <br>
+                <h3>Find the name of this IPRC student</h3>
+                <br>
+                <div class="form-conrol">
+                    <label for="letter" id="letterLabel"></label>
+                </div>
+                <br>
+                <div class="form-group" id="workingArea">
+                    <span class="form-conrol">
+                        Enter a letter
+                    </span>
+                    <input type="text" class="form-conrol" 
+                           id="myInput" placeholder="Enter Letter" 
+                           maxlength="1"/>
+                    <br>
+                    <div class="form-conrol">
+                        <span style="color:red;" id="errorMsg"></span>
+                    </div>
+                    <br>
+                    <button type="button" id="game" class="btn btn-primary">Submit</button>
+                </div>
+                <button type="button" id="newGame" class="btn btn-primary">New Game</button>
+
+            </div>
+        </div>
     </body>
 </html>
